@@ -1,0 +1,21 @@
+{
+    "name": "kletellier/html",
+    "type": "library",
+    "description": "Bootstrap menu and table builder for Kletellier/MVC.",
+    "keywords": ["kletellier","bootstrap"],
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "kletellier"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "philo/laravel-blade": "3.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kletellier\\": "src/Kletellier/"
+        }
+    }
+}
