@@ -42,9 +42,9 @@ class Table   {
 		return implode(" ",$this->classes);
 	}
 	
-	public function getHtmlTable()
+	public function getHtmlTable($cachepath="")
 	{	 
-	 	$tpl = new \Kletellier\Html\BladeService();		 	 
+	 	$tpl = new \Kletellier\Html\BladeService($cachepath);		 	 
 	 	$html = $tpl->render('table',array('table'=>$this));
 	 	return $html;
 	}

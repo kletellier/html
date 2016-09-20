@@ -81,11 +81,9 @@ class Menu   {
 		return $this;
 	}
 
-	public function getHtmlMenu()
-	{		 
-		 
-	 	$tpl = new \Kletellier\Html\BladeService();	 	 
-	 	 
+	public function getHtmlMenu($cachepath="")
+	{		 		 
+	 	$tpl = new \Kletellier\Html\BladeService($cachepath);	
 	 	$html = $tpl->render('menu',array('menu'=>$this));
 	 	return $html;
 	}

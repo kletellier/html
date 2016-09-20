@@ -34,7 +34,7 @@ class BladeService
      * @param string $template template path
      * @param array $params parameters array for template
      */ 
-    public function render($template,array $params,$disabledebug=false)
+    public function render($template,array $params)
     {   
         $ret = "";
         try 
