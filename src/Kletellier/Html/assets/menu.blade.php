@@ -8,7 +8,7 @@
                 <span class="icon-bar"></span>
             </button>
 
-            <a href="{{ $menu->getUrl() }}" class="navbar-brand">{{ $menu->getTitle() }}</a>
+            <a href="{{ $menu->getUrl() }}" class="navbar-brand">{!! $menu->getTitle() !!}</a>
         </div>
 
         <div class="collapse navbar-collapse" id="menu-collapse">
