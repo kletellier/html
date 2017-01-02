@@ -12,9 +12,7 @@
         </div>
 
         <div class="collapse navbar-collapse" id="menu-collapse">
-            <ul class="nav navbar-nav">
-                @include('menuitems', ['items'=> $menu->getMenuItems() ])
-            </ul>
+            <ul class="nav navbar-nav">@include('menuitems', ['items'=> $menu->getMenuItems() ])</ul>
         </div>
     </div>
 </nav>
